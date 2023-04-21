@@ -3,37 +3,19 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import config from "./deno.json" assert { type: "json" };
-import * as $0 from "./routes/_404.tsx";
-import * as $1 from "./routes/_500.tsx";
-import * as $2 from "./routes/_app.tsx";
-import * as $3 from "./routes/_middleware.ts";
-import * as $4 from "./routes/blog.tsx";
-import * as $5 from "./routes/blog/[slug].tsx";
-import * as $6 from "./routes/img/[type].tsx";
-import * as $7 from "./routes/index.tsx";
-import * as $8 from "./routes/send.tsx";
-import * as $$0 from "./islands/ColorMode.tsx";
-import * as $$1 from "./islands/Language.tsx";
-import * as $$2 from "./islands/MobileHeader.tsx";
-import * as $$3 from "./islands/Project.tsx";
+import * as $0 from "./routes/[name].tsx";
+import * as $1 from "./routes/api/joke.ts";
+import * as $2 from "./routes/index.tsx";
+import * as $$0 from "./islands/Counter.tsx";
 
 const manifest = {
   routes: {
-    "./routes/_404.tsx": $0,
-    "./routes/_500.tsx": $1,
-    "./routes/_app.tsx": $2,
-    "./routes/_middleware.ts": $3,
-    "./routes/blog.tsx": $4,
-    "./routes/blog/[slug].tsx": $5,
-    "./routes/img/[type].tsx": $6,
-    "./routes/index.tsx": $7,
-    "./routes/send.tsx": $8,
+    "./routes/[name].tsx": $0,
+    "./routes/api/joke.ts": $1,
+    "./routes/index.tsx": $2,
   },
   islands: {
-    "./islands/ColorMode.tsx": $$0,
-    "./islands/Language.tsx": $$1,
-    "./islands/MobileHeader.tsx": $$2,
-    "./islands/Project.tsx": $$3,
+    "./islands/Counter.tsx": $$0,
   },
   baseUrl: import.meta.url,
   config,
